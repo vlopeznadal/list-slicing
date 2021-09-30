@@ -117,8 +117,9 @@ def inner_four_end(input_list):
     [12, 15, 18, 21]
 
     """
+    new_list = input_list[-6:-2]
 
-    return []
+    return new_list
 
 
 def replace_head(input_list):
