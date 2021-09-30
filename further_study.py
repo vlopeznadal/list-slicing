@@ -47,8 +47,10 @@ def custom_append(input_list, value):
         True
 
     """
+    counter = custom_len(input_list)
 
-    pass
+    input_list[counter:counter] = [value]
+    
 
 
 def custom_extend(input_list, second_list):
@@ -67,7 +69,9 @@ def custom_extend(input_list, second_list):
 
     """
 
-    pass
+    counter = custom_len(input_list)
+
+    input_list[counter:counter] = second_list
 
 
 def custom_insert(input_list, index, value):
@@ -84,8 +88,11 @@ def custom_insert(input_list, index, value):
         True
 
     """
+    counter = custom_len(input_list)
+    input_list[counter:counter] = [input_list[index]]
+    input_list[index] = value
 
-    pass
+    return input_list
 
 
 def custom_remove(input_list, value):
@@ -122,8 +129,6 @@ def custom_pop(input_list):
         ['Jan', 'Feb']
 
     """
-
-    return None
 
 
 def custom_index(input_list, value):
@@ -225,4 +230,4 @@ if __name__ == "__main__":
     if result.failed == 0:
         print("ALL TESTS PASSED")
 
-print(custom_len(['Do', 'Re', 'Mi', 'Fa', 'So', 'La', 'Ti', 'Do']))
+print(custom_insert(['Jan', 'Mar'], 1, 'Feb'))
