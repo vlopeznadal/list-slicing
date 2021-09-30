@@ -202,8 +202,11 @@ def delete_middle(input_list):
     True
 
     """
-
+    del input_list[2:-2]
     pass
+
+
+    
 
 
 # This is the part were we actually run the doctests.
@@ -214,3 +217,4 @@ if __name__ == "__main__":
     result = doctest.testmod()
     if result.failed == 0:
         print("ALL TESTS PASSED")
+
