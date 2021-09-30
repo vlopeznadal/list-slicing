@@ -170,9 +170,7 @@ def replace_middle(input_list):
 
     """
     input_list[2:-2] = 42, 37
-    return input_list
-
-    #pass
+    pass
 
 
 def delete_third_and_seventh(input_list):
@@ -186,7 +184,8 @@ def delete_third_and_seventh(input_list):
     True
 
     """
-
+    del input_list[2]
+    del input_list[6]
     pass
 
 
@@ -215,5 +214,3 @@ if __name__ == "__main__":
     result = doctest.testmod()
     if result.failed == 0:
         print("ALL TESTS PASSED")
-
-print(replace_middle([0, 3, 6, 9, 12, 15, 18, 21, 24, 27]))
