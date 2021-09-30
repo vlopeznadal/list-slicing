@@ -149,7 +149,8 @@ def replace_third_and_last(input_list):
     True
 
     """
-
+    input_list[2] = 37
+    input_list[-1] = 37
     pass
 
 
@@ -212,4 +213,3 @@ if __name__ == "__main__":
     result = doctest.testmod()
     if result.failed == 0:
         print("ALL TESTS PASSED")
-
