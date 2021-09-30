@@ -51,7 +51,7 @@ def top(input_list):
     """
 
     return input_list[:-1]
-
+    
 
 def first_three(input_list):
     """Return the first three elements of the input list.
@@ -63,7 +63,7 @@ def first_three(input_list):
 
     """
 
-    return []
+    return input_list[0:3]
 
 
 def last_five(input_list):
@@ -210,4 +210,3 @@ if __name__ == "__main__":
     result = doctest.testmod()
     if result.failed == 0:
         print("ALL TESTS PASSED")
-print(top(['Jan', 'Feb', 'Mar']))
