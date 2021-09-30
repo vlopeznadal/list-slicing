@@ -22,8 +22,9 @@ def tail(input_list):
     ['Feb', 'Mar']
 
     """
+    new_input = input_list[1:]
 
-    return []
+    return new_input
 
 
 def last(input_list):
@@ -209,3 +210,5 @@ if __name__ == "__main__":
     result = doctest.testmod()
     if result.failed == 0:
         print("ALL TESTS PASSED")
+
+
