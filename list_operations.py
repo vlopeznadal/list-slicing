@@ -133,8 +133,9 @@ def replace_head(input_list):
     True
 
     """
-
-    pass
+    input_list[0] = 42
+    return input_list
+    
 
 
 def replace_third_and_last(input_list):
@@ -211,3 +212,5 @@ if __name__ == "__main__":
     result = doctest.testmod()
     if result.failed == 0:
         print("ALL TESTS PASSED")
+
+print(replace_head([0, 3, 6, 9, 12, 15, 18, 21, 24, 27]))
